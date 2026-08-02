@@ -12,6 +12,8 @@ gem 'sinatra-contrib', '~> 2.1'
 gem 'webrick', '~> 1.7'
 gem 'concurrent-ruby', '1.3.4'
 gem 'bigdecimal', '~> 3.1'
+gem 'base64'
+gem 'mutex_m'
 
 group :development do
   gem 'pry'

@@ -14,3 +14,6 @@ ActiveRecord::Base.establish_connection(db_config)
 # タイムゾーン設定
 Time.zone = 'Tokyo'
 ActiveRecord::Base.default_timezone = :local
+
+class Trip < ActiveRecord::Base
+end

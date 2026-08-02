@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>🧳 BagSplit</h1>
+
+  <div class="action-section">
+    <a href="/trip/new" class="btn btn-primary">➕ 旅をあたらしく作る</a>
+  </div>
+
+  <div class="join-section">
+    <form action="/trips/join" method="post">
+      <input type="text" name="invite_code" placeholder="招待コードを入力" required>
+      <button type="submit" class="btn">🎫 コードで参加</button>
+    </form>
+    <button type="button" class="btn btn-secondary">📷 QRスキャナー起動</button>
+  </div>
+
+  <div class="list-section">
+    <h2>📋 進行中の旅</h2>
+    <% if @trips && @trips.any? %>
+      <div class="trip-list">
+        <% @trips.each do |trip| %>
+          <a href="/room/<%= trip[:id] %>" class="trip-card">
+            <span>✈️ <%= trip[:name] %></span>
+            <span class="arrow">➔</span>
+          </a>
+        <% end %>
+      </div>
+    <% else %>
+      <p class="empty-message">現在進行中の旅はありません。</p>
+    <% end %>
+  </div>
+</div>

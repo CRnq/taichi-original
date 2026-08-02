@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFCF01;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  overflow: hidden;
+  font-size: 1vw;
+}
+
+a {
+  text-decoration: none;
+  color: #282828;
+  font-size: 48px;
+  letter-spacing: .1rem;
+  display: block;
+  margin-top: 4vh;
+}
+
+/* form.erb */
+
+form {
+  margin: 114px 0 103px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10vh;
+}
+
+form div {
+  display: flex;
+}
+
+.input_form {
+  flex-direction: column
+}
+
+.price_label, .count_label {
+  align-items: flex-end
+}
+
+.price_label {
+  margin-bottom: 32px;
+}
+
+form div p {
+  font-size: 48px;
+}
+
+input[type="text"] {
+  width: 360px;
+  height: 160px;
+}
+
+input[type="number"] {
+  width: 240px;
+  height: 170px;
+}
+
+input[type="text"], input[type="number"] {
+  font-size: 64px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+}
+
+input[type="submit"] {
+  width: 200px;
+  height: 100px;
+  background-color: #FFCF01;
+  border-radius: 8px;
+  border: 3px solid #FFFFFF;
+  font-size: 40px;
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.circle_one, .circle_two, img {
+  position: absolute;
+  z-index: -1;
+}
+
+.circle_one, .circle_two {
+  border-radius: 50%;
+  background-color: #FFC700;
+}
+
+.circle_one {
+  width: 467px;
+  height: 467px;
+  top: -55px;
+  right: 218px;
+}
+
+.circle_two {
+  width: 637px;
+  height: 637px;
+  bottom: -247px;
+  left: 159px;
+}
+
+img {
+  width: 544px;
+  opacity: 0.8;
+  bottom: 0;
+  right: 0;
+}
+
+/* result.erb */
+
+.result_form {
+  margin-top: 221px;
+}
+
+.result_form p {
+  font-size: 36px;
+}
+
+.result {
+  display: flex;
+  align-items: flex-end;
+}
+
+.result p:nth-child(1) {
+  font-size: 64px;
+  padding: 20px 110px;
+  border-radius: 0.5vw;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.result p:nth-child(2) {
+  font-size: 48px;
+}
+
+.circle_three, .circle_four, .circle_five, .result_bilson {
+  position: absolute;
+  z-index: -1;
+}
+
+.circle_three, .circle_four, .circle_five {
+  border-radius: 50%;
+  background-color: #FFC700;
+}
+
+.circle_three {
+  width: 419px;
+  height: 419px;
+  top: 42px;
+  right: -147px;
+}
+
+.circle_four {
+  width: 637px;
+  height: 637px;
+  top: 193px;
+  left: 400px;
+}
+
+.circle_five {
+  width: 539px;
+  height: 539px;
+  bottom: -136px;
+  left: -105px;
+}
+
+.result_bilson {
+  width: 544px;
+}

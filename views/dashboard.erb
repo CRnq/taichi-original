@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telica</title>
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <link rel="icon" href="/img/favicon.ico">
+  <script src="/js/font.js"></script>
+</head>
+<!-- 全体を包むコンテナ -->
+<div class="dashboard">
+
+  <!-- 1. 左側のナビゲーション（サイドバー） -->
+  <aside class="sidebar-left">
+    <!-- アプリ名、メニュー、ユーザー情報など -->
+    <p>SKYSHARE</p>
+    <h3>グループ荷物シェア</h3>
+    <button>🏠ホーム</button>
+    <br>
+    <button>👥ルーム</button>
+    <button>📦マイパッキング</button>
+    <button>↑スプリット</button>
+    <br>
+    <p>進行中の旅</p>
+    <button>沖縄ニトリん置いてく旅</button>
+  </aside>
+
+  <!-- 2. 中央のメインエリア（グループの情報） -->
+  <main class="main-content">
+    <!-- 上部のパンくず・ボタン -->
+    <!-- グループ総計のメーターカード -->
+    <!-- メンバー一覧（ここがERBの見せ所！） -->
+    <p class="p-mini">ホーム > 沖縄ニトリん置いてく旅</p>
+    <!-- グループ総計のカード -->
+<div class="total-card">
+    <p>73.2 / 80.0kg</p>
+    
+    <!-- これがバーの土台 -->
+    <div class="progress-bar-bg">
+        <!-- これが内側の黒いバー（幅を%で指定して伸ばします） -->
+        <div class="progress-bar-fill" style="width: 91.5%;"></div>
+    </div>
+    
+</div>
+<br>
+<div>
+    <p>メンバー (3/4入力済み)</p>
+    <div class="member">
+      <img></img>
+        <div>
+            <h3>ゆうき(自分)</h3>
+            <p>6.8kg / 7.0kg</p>
+        </div>
+        <h3>入力する</h3>
+    </div>
+</div>
+  </main>
+
+  <!-- 3. 右側のエリア（マイパッキングやトレード指示） -->
+  <aside class="sidebar-right">
+    <!-- マイパッキングの数字調整 -->
+    <!-- 追加料金とトレードの指示リスト -->
+    <p>test</p>
+  </aside>
+
+</div>
+</html>

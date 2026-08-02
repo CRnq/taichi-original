@@ -30,7 +30,7 @@ services:
   # PostgreSQL コンテナ
   db:
     container_name: db
-    image: postgres:latest     # 使用する公式 PostgreSQL イメージ
+    image: postgres:16         # 使用する公式 PostgreSQL イメージ（latest固定は避ける）
     environment:
       POSTGRES_USER: postgres         # DB ユーザー名
       POSTGRES_PASSWORD: password     # DB パスワード
